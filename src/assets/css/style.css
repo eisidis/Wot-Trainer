@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    /* background-color: #1c1c1e; */
+    background-image: url('../img/sparks.png');
+}
+
+h1 {
+    color: aliceblue;
+}
+
+.tankImage {
+    width: 20rem;
+}
