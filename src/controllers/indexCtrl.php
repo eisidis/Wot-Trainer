@@ -19,12 +19,37 @@ curl_setopt_array(
 
 $response = curl_exec($curl);
 $err = curl_error($curl);
-
 curl_close($curl);
-
-
-
 $response = json_decode($response, true);
+
+$max = count($response['data']);
+$min = 0;
+
+$randomNumber = rand($min, $max - 1);
+$randomTank = array_values($response['data'])[$randomNumber];
+$tankHp = $randomTank['default_profile']['hp'];
+
+if (!empty($_GET)) {
+    for ($i = 0; $i <= $max - 1; $i++) {
+    }
+    if (!empty($_GET['userHp'])) {
+        $userHp = $_GET['userHp'];
+        if ($userHp == $tankHp) {
+            var_dump('bien joué');
+        } else {
+            echo "raté c'était " . $tankHp;
+        }
+        // echo "bonjour " . $hp;
+    }
+}
+
+var_dump($tankHp . ' ' . $randomTank['short_name']);
+
+// echo $randomTank;
+
+
+
+
 // var_dump($response['data']);
 // echo $response['data']['14881']['short_name'];
 // foreach ($response['data'] as $i) {
@@ -35,9 +60,3 @@ $response = json_decode($response, true);
 //         var_dump($img);
 //     }
 // }
-
-// echo 'Online: '. $response['data'];
-
-// var_dump($response);
-// var_dump($response);
-// var_dump(gettype($curl));

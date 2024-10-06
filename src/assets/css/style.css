@@ -2,12 +2,19 @@ body {
     margin: 0;
     /* background-color: #1c1c1e; */
     background-image: url('../img/sparks.png');
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
 }
 
 h1 {
-    color: aliceblue;
+    color: #e9e2bf;
 }
 
-.tankImage {
-    width: 20rem;
+#tankName {
+    text-align: center;
 }
+
+/* .tankImage {
+    width: 20rem;
+} */
