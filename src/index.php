@@ -17,31 +17,46 @@ require_once 'controllers/indexCtrl.php'
     <?php
     if (!empty($_GET)) { ?>
         <div id="tankName">
-            <p><?= $randomTank['short_name'] ?></p>
+            <p class="textLabel"><?= $randomTank['short_name'] ?></p>
             <img src="<?= $randomTank['images']['big_icon'] ?>">
         </div>
-        
-        <label>Points de structure</label>
-        <input type="text" id="userHp">
-        <div id="resultHp"></div>
+        <div id="question">
+            <div class="column">
+                <label class="textLabel">Points de structure</label>
+                <input type="text" id="userHp">
+                <div id="resultHp"></div>
+            </div>
 
-        <label>dégâts par tir</label>
-        <input type="text" id="userDamge">
-        <div id="result"></div>
+            <div class="column">
+                <label class="textLabel">dégâts par tir</label>
+                <input type="text" id="userDamge">
+                <div id="resultDamage"></div>
+            </div>
+
+            <div class="column">
+                <label class="textLabel">DPM</label>
+                <input type="text" id="DPM">
+                <div id="resultDPM"></div>
+            </div>
+
+            <div class="column">
+                <label class="textLabel">Temps de rechargement</label>
+                <input type="text" id="userDamge">
+                <div id="result"></div>
+            </div>
+
+        </div>
+
 
         <button id="validate">Valider</button>
 
     <?php } else { ?>
         <form method="GET">
-            <input type="submit" name="start" value="Start">
+            <input id="start" type="submit" name="start" value="Start">
         </form>
     <?php
     }
     ?>
-
-
-
-
 
 
 

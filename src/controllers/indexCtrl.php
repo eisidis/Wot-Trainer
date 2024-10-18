@@ -35,7 +35,7 @@ if (!empty($_GET)) {
     if (!empty($_GET['userHp'])) {
         $userHp = $_GET['userHp'];
         if ($userHp == $tankHp) {
-            var_dump('bien joué');
+            echo "bien joué";
         } else {
             echo "raté c'était " . $tankHp;
         }
@@ -43,11 +43,9 @@ if (!empty($_GET)) {
     }
 }
 
-var_dump($tankHp . ' ' . $randomTank['short_name']);
+// var_dump($tankHp . ' ' . $randomTank['short_name']);
 
 // echo $randomTank;
-
-
 
 
 // var_dump($response['data']);
