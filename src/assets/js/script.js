@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("#validate").click(function() {
+    $("#validate").click(function(e) {
         var userHp = $("#userHp").val();
         $.ajax({
             url: "controllers/indexCtrl.php",

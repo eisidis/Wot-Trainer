@@ -32,6 +32,7 @@ $tankHp = $randomTank['default_profile']['hp'];
 if (!empty($_GET)) {
     for ($i = 0; $i <= $max - 1; $i++) {
     }
+    var_dump($randomTank['short_name']);
     if (!empty($_GET['userHp'])) {
         $userHp = $_GET['userHp'];
         if ($userHp == $tankHp) {
