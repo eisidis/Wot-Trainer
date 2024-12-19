@@ -1,7 +1,7 @@
 const nextBtn = document.getElementById("next")
 validate.addEventListener("click", () => {
-    console.log('olizefjjiozge');
-    
+    console.log("ahah t'es pas beau");
+
 })
 
 fetch('https://api.worldoftanks.eu/wot/encyclopedia/vehicles/?application_id=77b55a76eb843a2b51927278550b8534&tier=10&nation=usa&type=heavyTank')
@@ -14,7 +14,7 @@ fetch('https://api.worldoftanks.eu/wot/encyclopedia/vehicles/?application_id=77b
         nextBtn.addEventListener("click", () => {
             // console.log(Object.keys(data));
             var randomIndex = Math.floor(Math.random() * tankData.length);
-            console.log(tankData[2]);
+            console.log(tankData);
             // console.log(Object.keys(data.data)[random]);
         })
     })
