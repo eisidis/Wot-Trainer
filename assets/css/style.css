@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    gap: 5rem;
+    background-color: #1c1c1e;
+    background-image: url('../img/sparks.png');
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: #e9e2bf;
+}
+
+#tankName {
+    text-align: center;
+}
+
+/* #question {
+    display: flex;
+    flex-direction: column;
+} */
+
+.column {
+    margin: .5rem 0 .5rem 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.textLabel {
+    color: #e9e2bf;
+}
+
+.result {
+    color: #e9e2bf;
+}
+
+/* #start {
+    margin-top: 25rem;
+} */
+
+button, input {
+    border: 1px solid;
+    color: #e9e2bf;
+    background-color: #1c1c1e;
+    border-radius: 4px;
+}
+
+#start {
+    width: 6rem;
+    height: 2.5rem;
+}
+
+
+#start {
+    transition: all .5s ease;
+    color: #e9e2bf;
+    border: 3px solid #e9e2bf;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+}
+#start:hover {
+    color: #1c1c1e;
+    background-color: #e9e2bf;
+    cursor: pointer;
+}
+
+/* .tankImage {
+    width: 20rem;
+} */

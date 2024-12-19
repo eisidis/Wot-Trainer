@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>WoT Trainer</title>
+</head>
+
+<body>
+    <h1>WoT Trainer</h1>
+    <!-- <?php
+    if (!empty($_GET)) { ?>
+        <div id="tankName">
+            <p class="textLabel"><?= $randomTank['short_name'] ?></p>
+            <img src="<?= $randomTank['images']['big_icon'] ?>">
+        </div> -->
+        <div id="question">
+            <div class="column">
+                <label class="textLabel">Points de structure</label>
+                <input type="text" id="userHp">
+                <div id="resultHp" class="result"></div>
+            </div> 
+
+            <div class="column">
+                <label class="textLabel">dégâts par tir</label>
+                <input type="text" id="userDamge">
+                <div id="resultDamage" class="result"></div>
+            </div>
+
+            <div class="column">
+                <label class="textLabel">DPM</label>
+                <input type="text" id="DPM">
+                <div id="resultDPM" class="result"></div>
+            </div>
+
+            <div class="column">
+                <label class="textLabel">Temps de rechargement</label>
+                <input type="text" id="userDamge">
+                <div id="result" class="result"></div>
+            </div>
+
+        </div>
+
+        <div>
+            <button id="validate">Valider</button>
+            <button id="next">Suivant</button>
+        </div>
+
+    <!-- <?php } else { ?>
+        <form method="GET">
+            <input id="start" type="submit" name="start" value="Start">
+        </form>
+    <?php
+    }
+    ?> -->
+
+
+
+    <script>
+        // const hp = <?= $tankHp ?>;
+    </script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
