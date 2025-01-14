@@ -16,37 +16,39 @@
             <p class="textLabel"><?= $randomTank['short_name'] ?></p>
             <img src="<?= $randomTank['images']['big_icon'] ?>">
         </div> -->
-        <div id="question">
-            <div class="column">
-                <label class="textLabel">Points de structure</label>
-                <input type="text" id="userHp">
-                <div id="resultHp" class="result"></div>
-            </div> 
-
-            <div class="column">
-                <label class="textLabel">dégâts par tir</label>
-                <input type="text" id="userDamge">
-                <div id="resultDamage" class="result"></div>
-            </div>
-
-            <div class="column">
-                <label class="textLabel">DPM</label>
-                <input type="text" id="DPM">
-                <div id="resultDPM" class="result"></div>
-            </div>
-
-            <div class="column">
-                <label class="textLabel">Temps de rechargement</label>
-                <input type="text" id="userDamge">
-                <div id="result" class="result"></div>
-            </div>
-
+    <div id="question">
+        <div class="textLabel" id="tankName">
+        </div>
+        <div class="column">
+            <label class="textLabel">Points de structure</label>
+            <input type="text" id="userHp">
+            <div id="resultHp" class="result"></div>
         </div>
 
-        <div>
-            <button id="validate">Valider</button>
-            <button id="next">Suivant</button>
+        <div class="column">
+            <label class="textLabel">dégâts par tir</label>
+            <input type="text" id="userDamge">
+            <div id="resultDamage" class="result"></div>
         </div>
+
+        <div class="column">
+            <label class="textLabel">DPM</label>
+            <input type="text" id="DPM">
+            <div id="resultDPM" class="result"></div>
+        </div>
+
+        <div class="column">
+            <label class="textLabel">Temps de rechargement</label>
+            <input type="text" id="userDamge">
+            <div id="result" class="result"></div>
+        </div>
+
+    </div>
+
+    <div>
+        <button id="validate">Valider</button>
+        <button id="next">Suivant</button>
+    </div>
 
     <!-- <?php } else { ?>
         <form method="GET">
