@@ -31,7 +31,7 @@ fetch('https://api.worldoftanks.eu/wot/encyclopedia/vehicles/?application_id=77b
                 resultHp.innerText = "Bravo";
             } else {
                 console.log("Perdu");
-                resultHp.innerText = "raté big noob ahahah";
+                resultHp.innerText = "raté c'était " + tank["hp"] + " big noob ahahah";
             }
         })
 
