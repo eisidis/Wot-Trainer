@@ -1,0 +1,1 @@
+fetch('https://steamcommunity.com/market/pricehistory?appid=730&market_hash_name=AWP%20%7C%20Dragon%20Lore%20%28Factory%20New%29')

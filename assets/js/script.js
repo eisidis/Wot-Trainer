@@ -3,8 +3,10 @@ const tankName = document.getElementById("tankName")
 const userHp = document.getElementById("userHp")
 const resultHp = document.getElementById("resultHp")
 
+// https://api.worldoftanks.eu/wot/encyclopedia/vehicles/?application_id=77b55a76eb843a2b51927278550b8534&tier=10
+// https://api.worldoftanks.eu/wot/encyclopedia/vehicles/?application_id=77b55a76eb843a2b51927278550b8534&tier=10&nation=usa&type=heavyTank
 
-fetch('https://api.worldoftanks.eu/wot/encyclopedia/vehicles/?application_id=77b55a76eb843a2b51927278550b8534&tier=10&nation=usa&type=heavyTank')
+fetch('https://api.worldoftanks.eu/wot/encyclopedia/vehicles/?application_id=77b55a76eb843a2b51927278550b8534&tier=10')
     .then(response => response.json()) // Convertir la réponse en JSON
     .then(data => {
         const tankData = Object.values(data.data) // Convertir l'objet en tableau de valeurs
